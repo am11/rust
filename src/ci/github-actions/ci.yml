@@ -282,12 +282,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: dist-x86_64-linux
-            <<: *job-linux-xl
-
-          - name: dist-x86_64-linux-alt
-            env:
-              IMAGE: dist-x86_64-linux
+          - name: dist-various-2
             <<: *job-linux-xl
 
   auto:
